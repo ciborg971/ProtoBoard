@@ -1,0 +1,27 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#(c) SnapEDA 2016 (snapeda.com)
+#This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA) with Design Exception 1.0
+#
+# L9110S
+#
+DEF L9110S IC 0 40 Y Y 1 L N
+F0 "IC" 0 0 50 H I L BNN
+F1 "L9110S" 0 0 50 H I L BNN
+F2 "SOIC127P600X150-8" 0 0 50 H I L BNN
+F3 "" 0 0 50 H I L BNN
+DRAW
+T 0 -300 400 70 0 0 0 L9110S Normal 0 L B
+S -300 -200 300 300 0 0 6 f
+X OA 1 -400 200 100 R 40 40 0 0 O 
+X VCC 2 -400 100 100 R 40 40 0 0 W 
+X VCC1 3 -400 0 100 R 40 40 0 0 W 
+X OB 4 -400 -100 100 R 40 40 0 0 O 
+X GND 8 400 200 100 L 40 40 0 0 W 
+X IB 7 400 100 100 L 40 40 0 0 I 
+X IA 6 400 0 100 L 40 40 0 0 I 
+X GND1 5 400 -100 100 L 40 40 0 0 W 
+ENDDRAW
+ENDDEF
+#
+# End Library

@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name "2022-04-08_21-45-33")(type "Legacy")(uri "${KIPRJMOD}/lib/ul_SY6280AAC/KiCAD/2022-04-08_21-45-33/2022-04-08_21-45-33.lib")(options "")(descr ""))
+  (lib (name "L9110S")(type "Legacy")(uri "${KIPRJMOD}/lib/L9110S/L9110S.lib")(options "")(descr ""))
 )
