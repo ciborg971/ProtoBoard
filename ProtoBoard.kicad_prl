@@ -70,19 +70,6 @@
     "version": 3
   },
   "project": {
-    "files": [
-      {
-        "name": "ProtoBoard.kicad_pcb",
-        "open": false,
-        "window": {
-          "display": 0,
-          "maximized": false,
-          "pos_x": 8,
-          "pos_y": 40,
-          "size_x": 1708,
-          "size_y": 1392
-        }
-      }
-    ]
+    "files": []
   }
 }

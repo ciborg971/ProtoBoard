@@ -1,0 +1,26 @@
+Drill report for ProtoBoard.kicad_pcb
+Created on 2022 April 22, Friday 00:51:19
+
+Copper Layer Stackup:
+    =============================================================
+    L1 :  F.Cu                      front
+    L2 :  In1.Cu                    in1
+    L3 :  In2.Cu                    in2
+    L4 :  B.Cu                      back
+
+
+Drill file 'ProtoBoard-PTH.drl' contains
+    plated through holes:
+    =============================================================
+    T1  0.400mm  0.0157"  (51 holes)
+    T2  1.000mm  0.0394"  (17 holes)
+    T3  2.200mm  0.0866"  (4 holes)
+
+    Total plated holes count 72
+
+
+Drill file 'ProtoBoard-NPTH.drl' contains
+    unplated through holes:
+    =============================================================
+
+    Total unplated holes count 0
