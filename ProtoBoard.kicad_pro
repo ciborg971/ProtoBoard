@@ -380,7 +380,7 @@
       "idf": "",
       "netlist": "",
       "specctra_dsn": "ProtoBoard.dsn",
-      "step": "",
+      "step": "ProtoBoard.step",
       "vrml": ""
     },
     "page_layout_descr_file": ""
