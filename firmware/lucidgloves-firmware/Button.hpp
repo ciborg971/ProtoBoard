@@ -1,7 +1,7 @@
 #pragma once
 
 #include "Config.h"
-
+#include "AdcMux.hpp"
 #include "DriverProtocol.hpp"
 
 class Button : public EncodedInput {
@@ -10,11 +10,14 @@ class Button : public EncodedInput {
     type(type), pin(pin), on_state(invert ? HIGH : LOW), value(false) {}
 
   void setupInput() override {
-    pinMode(pin, INPUT_PULLUP);
+    if(pin < MIN_MUX_GPIO)
+    {
+      pinMode(pin, INPUT_PULLUP);
+    }
   }
 
   virtual void readInput() {
-    value = (digitalRead(pin) == on_state);
+    value = (AdcMuxRead(pin) == on_state);
   }
 
   inline int getEncodedSize() const override {

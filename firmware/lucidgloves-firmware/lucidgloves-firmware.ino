@@ -9,6 +9,8 @@
   #include "SerialBTCommunication.hpp"
 #endif
 
+#include "AdcMux.hpp"
+
 #define ALWAYS_CALIBRATING CALIBRATION_LOOPS == -1
 
 ICommunication* comm;
@@ -78,6 +80,9 @@ void setup() {
 
   // Setup the LED.
   led.setup();
+
+  // Setup Multiplexer
+  SetupAdcMux();
 
   if (ALWAYS_CALIBRATING) {
     for (size_t i = 0; i < calibrated_count; i++) {

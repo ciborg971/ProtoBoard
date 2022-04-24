@@ -1,3 +1,5 @@
+#pragma once
+
 #define SEL1 26
 #define SEL2 25
 #define SEL3 32

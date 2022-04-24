@@ -4,6 +4,8 @@
 
 #include "DriverProtocol.hpp"
 
+#include "AdcMux.hpp"
+
 class JoyStickAxis : public EncodedInput {
  public:
   JoyStickAxis(EncodedInput::Type type, int pin, float dead_zone, bool invert) :
@@ -11,7 +13,7 @@ class JoyStickAxis : public EncodedInput {
 
   void readInput() override {
     // Read the latest value.
-    int new_value = analogRead(pin);
+    int new_value = AdcMuxRead(pin);
 
     // Apply the deadzone to the value.
     new_value = filterDeadZone(new_value);

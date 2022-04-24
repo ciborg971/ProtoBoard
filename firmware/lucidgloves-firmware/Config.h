@@ -84,7 +84,7 @@
 // Used for array allocations. These may need to be increased if more inputs are added.
 #define MAX_INPUT_COUNT      32
 #define MAX_CALIBRATED_COUNT 8
-#define MAX_OUTPUT_COUNT     8
+#define MAX_OUTPUT_COUNT     11
 
 //PINS CONFIGURATION
 //(This configuration is for ESP32 DOIT V1 so make sure to change if you're on another board)

@@ -4,6 +4,7 @@
 
 #include "Calibration.hpp"
 #include "DriverProtocol.hpp"
+#include "AdcMux.hpp"
 
 #if ENABLE_MEDIAN_FILTER
   #include <RunningMedian.h>
@@ -17,7 +18,7 @@ class Finger : public EncodedInput, public Calibrated {
 
   void readInput() override {
     // Read the latest value.
-    int new_value = analogRead(pin);
+    int new_value = AdcMuxRead(pin);
 
     // Apply configured modifiers.
     #if INVERT_FLEXION
@@ -87,7 +88,7 @@ class SplayFinger : public Finger {
 
   void readInput() override {
     Finger::readInput();
-    int new_splay_value = analogRead(splay_pin);
+    int new_splay_value = AdcMuxRead(splay_pin);
     // Update the calibration
     if (calibrate) {
       splay_calibrator.update(new_splay_value);
