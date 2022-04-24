@@ -56,9 +56,24 @@ A small board (35 x 50 mm) for great gloves !
 |C6, C8| 10uF 0402 capacitor | 2 | [url]() |
 |J5, J6, J8| connector 2.54 male header | 3 | [url]() |
 
+## Multiplexer implementation
+
+The ESP32 with the most gpio have 48 gpio (GPIO0 to GPIO47) to simplify the GPIO logic, I decided that the 32 gpio of the multiplexer are GPIO48 to GPIO79. Related code [here](firmware/lucidgloves-firmware/AdcMux.hpp).
+
+Equivalent fritzing diagram
+![Mux diagram](media/Mux1.png)
+
+Pinout :
+- S0 is GPIO26
+- S1 is GPIO25
+- S2 is GPIO32
+- S3 is GPIO33
+- Two adc pin from the ESP32 are used GPIO35 (multiplexer 1 : GPIO48 to GPIO63) and GPIO34 (multiplexer 2 : GPIO64 to GPIO79)
+![Mux diagram](media/Mux2.png)
+
 ## TODO
 
 - Add url for bom
 - Add documentation to buy pcb
-- Add firmware
+- Add battery level information
 - Add pinout
