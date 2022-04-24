@@ -11,7 +11,7 @@
 // Which communication protocol to use
 #define COMM_SERIAL 0
 #define COMM_BTSERIAL 1
-#define COMMUNICATION COMM_SERIAL
+#define COMMUNICATION COMM_BTSERIAL
 
 // Serial over USB
 #define SERIAL_BAUD_RATE 115200
@@ -40,7 +40,7 @@
 
 // Finger settings
 #define ENABLE_THUMB   true  // If for some reason you don't want to track the thumb
-#define ENABLE_SPLAY   false // Track the side to side motion of fingers
+#define ENABLE_SPLAY   true // Track the side to side motion of fingers
 #define INVERT_FLEXION false
 #define INVERT_SPLAY   false
 
@@ -52,8 +52,8 @@
 // Force Feedback and haptic settings
 // Force feedback allows you to feel the solid objects you hold
 // Haptics provide vibration.
-#define ENABLE_FORCE_FEEDBACK false
-#define ENABLE_HAPTICS        false
+#define ENABLE_FORCE_FEEDBACK true
+#define ENABLE_HAPTICS        true
 
 #define FORCE_FEEDBACK_FINGER_SCALING  false // Experimental: Determine servo range of motion based on calibration data.
 #define FORCE_FEEDBACK_SMOOTH_STEPPING false // Experimental: Use servo microsecond pulses instead of degrees.
@@ -87,81 +87,42 @@
 #define MAX_OUTPUT_COUNT     8
 
 //PINS CONFIGURATION
-#if defined(__AVR__)
-  //(This configuration is for Arduino Nano so make sure to change if you're on another board)
-  #define PIN_PINKY           A0
-  #define PIN_RING            A1
-  #define PIN_MIDDLE          A2
-  #define PIN_INDEX           A3
-  #define PIN_THUMB           A4
-  #define PIN_JOY_X           A6
-  #define PIN_JOY_Y           A7
-  #define PIN_JOY_BTN         7
-  #define PIN_A_BTN           8
-  #define PIN_B_BTN           9
-  #define PIN_MENU_BTN        8
-  #define PIN_TRIG_BTN        10 //unused if gesture set
-  #define PIN_GRAB_BTN        11 //unused if gesture set
-  #define PIN_PNCH_BTN        12 //unused if gesture set
-  #define PIN_CALIB           13 //button for recalibration
-  #define PIN_LED             LED_BUILTIN
-  #define PIN_PINKY_FFB       2 //used for force feedback
-  #define PIN_RING_FFB        3 //^
-  #define PIN_MIDDLE_FFB      4 //^
-  #define PIN_INDEX_FFB       5 //^
-  #define PIN_THUMB_FFB       6 //^
-  #define PIN_HAPTIC          1
-  #define PIN_PINKY_SPLAY     1
-  #define PIN_RING_SPLAY      1
-  #define PIN_MIDDLE_SPLAY    1
-  #define PIN_INDEX_SPLAY     1
-  #define PIN_THUMB_SPLAY     1
-#elif defined(ESP32)
-  //(This configuration is for ESP32 DOIT V1 so make sure to change if you're on another board)
-  #define PIN_PINKY           36
-  #define PIN_RING            39
-  #define PIN_MIDDLE          34
-  #define PIN_INDEX           35
-  #define PIN_THUMB           32
-  #define PIN_JOY_X           33
-  #define PIN_JOY_Y           25
-  #define PIN_JOY_BTN         26
-  #define PIN_A_BTN           27
-  #define PIN_B_BTN           14
-  #define PIN_MENU_BTN        27
-  #define PIN_TRIG_BTN        12 //unused if gesture set
-  #define PIN_GRAB_BTN        13 //unused if gesture set
-  #define PIN_PNCH_BTN        23 //unused if gesture set
-  #define PIN_CALIB           12 //button for recalibration
-  #define PIN_LED             2
-  #define PIN_PINKY_FFB       5  //used for force feedback
-  #define PIN_RING_FFB        18 //^
-  #define PIN_MIDDLE_FFB      19 //^
-  #define PIN_INDEX_FFB       21 //^
-  #define PIN_THUMB_FFB       17 //^
-  #define PIN_HAPTIC          1
-  #define PIN_PINKY_SPLAY     1
-  #define PIN_RING_SPLAY      1
-  #define PIN_MIDDLE_SPLAY    1
-  #define PIN_INDEX_SPLAY     1
-  #define PIN_THUMB_SPLAY     1
-#endif
+//(This configuration is for ESP32 DOIT V1 so make sure to change if you're on another board)
+#define PIN_PINKY           48
+#define PIN_RING            49
+#define PIN_MIDDLE          50
+#define PIN_INDEX           51
+#define PIN_THUMB           52
+#define PIN_JOY_X           64
+#define PIN_JOY_Y           65
+#define PIN_JOY_BTN         66
+#define PIN_A_BTN           70
+#define PIN_B_BTN           68
+#define PIN_MENU_BTN        69
+#define PIN_TRIG_BTN        12 //unused if gesture set
+#define PIN_GRAB_BTN        13 //unused if gesture set
+#define PIN_PNCH_BTN        23 //unused if gesture set
+#define PIN_CALIB           67 //button for recalibration
+#define PIN_LED             23 // WS2812
+#define PIN_PINKY_FFB       27 //used for force feedback
+#define PIN_RING_FFB        14 //^
+#define PIN_MIDDLE_FFB      12 //^
+#define PIN_INDEX_FFB       13 //^
+#define PIN_THUMB_FFB       15 //^
+#define PIN_HAPTIC          18
+#define PIN_PINKY_SPLAY     59
+#define PIN_RING_SPLAY      60
+#define PIN_MIDDLE_SPLAY    61
+#define PIN_INDEX_SPLAY     62
+#define PIN_THUMB_SPLAY     63
+#define PIN_BAT             71          
 
 // Advanced Config. Don't touch this unless you know what you are doing. Only for the pros XD
 #define LOOP_TIME          4 //How much time between data sends (ms), set to 0 for a good time :)
 #define CALIBRATION_LOOPS -1 //How many loops should be calibrated. Set to -1 to always be calibrated.
 
 //Automatically set ANALOG_MAX depending on the microcontroller
-#if defined(__AVR__)
-#define ANALOG_MAX 1023
-#elif defined(ESP32)
 #define ANALOG_MAX 4095
-#else
-#error "This board doesn't have an auto ANALOG_MAX assignment, please set it manually by uncommenting ANALOG_MAX OVERRIDE!"
-//ANALOG_MAX OVERRIDE:
-// Uncomment and set as needed (only touch if you know what you are doing)
-//#define ANALOG_MAX 4095
-#endif
 
 //Filtering and clamping analog inputs
 #define CLAMP_ANALOG_MAP true //clamp the mapped analog values from 0 to ANALOG_MAX
