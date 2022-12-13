@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name "TYPE-C-31-M-12")(type "Legacy")(uri "${KIPRJMOD}/Lib/TYPE-C-31-M-12/TYPE-C-31-M-12.lib")(options "")(descr ""))
+  (lib (name "Espressif")(type "KiCad")(uri "${KIPRJMOD}/Lib/espressif-kicad-libraries/libraries/Espressif.kicad_sym")(options "")(descr ""))
+)
