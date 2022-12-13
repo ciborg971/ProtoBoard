@@ -48,13 +48,7 @@
           "min_clearance": 0.508
         }
       },
-      "diff_pair_dimensions": [
-        {
-          "gap": 0.0,
-          "via_gap": 0.0,
-          "width": 0.0
-        }
-      ],
+      "diff_pair_dimensions": [],
       "drc_exclusions": [],
       "meta": {
         "version": 2
@@ -118,15 +112,8 @@
         "solder_mask_min_width": 0.0,
         "use_height_for_length_calcs": true
       },
-      "track_widths": [
-        0.0
-      ],
-      "via_dimensions": [
-        {
-          "diameter": 0.0,
-          "drill": 0.0
-        }
-      ],
+      "track_widths": [],
+      "via_dimensions": [],
       "zones_allow_external_fillets": false,
       "zones_use_no_outline": true
     },
@@ -346,7 +333,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "ProtoBoard.kicad_pro",
+    "filename": "potMerger.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -379,8 +366,8 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "specctra_dsn": "ProtoBoard.dsn",
-      "step": "ProtoBoard.step",
+      "specctra_dsn": "",
+      "step": "potMerger.step",
       "vrml": ""
     },
     "page_layout_descr_file": ""
@@ -425,7 +412,7 @@
   },
   "sheets": [
     [
-      "e63e39d7-6ac0-4ffd-8aa3-1841a4541b55",
+      "6b23c1a2-a92e-40cc-a888-cc62d235e8e3",
       ""
     ]
   ],
