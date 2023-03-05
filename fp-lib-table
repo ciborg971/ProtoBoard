@@ -1,4 +1,7 @@
 (fp_lib_table
   (lib (name "footprints")(type "KiCad")(uri "${KIPRJMOD}/lib/footprints.pretty")(options "")(descr ""))
   (lib (name "Connectors")(type "KiCad")(uri "/Users/crylog/SparkFun-KiCad-Libraries/Footprints/Connectors.pretty")(options "")(descr ""))
+  (lib (name "Espressif")(type "KiCad")(uri "${KIPRJMOD}/lib/espressif-kicad-libraries/footprints/Espressif.pretty")(options "")(descr ""))
+  (lib (name "TYPE-C-31-M-12")(type "KiCad")(uri "${KIPRJMOD}/lib/TYPE-C-31-M-12")(options "")(descr ""))
+  (lib (name "WS2812-2020")(type "KiCad")(uri "${KIPRJMOD}/lib/WS2812-2020")(options "")(descr ""))
 )
