@@ -33,9 +33,9 @@ A small board (48 x 56 mm) for great gloves !
 ## Buy the PCB
 
 *Warning still in alpha, design is not yet validated*
+You can buy the board via PCBWay using the file ProtoBoard.kicad_pcb.zip and the BOM ProtoBoard.xlsx.
 
+*One click order button once the design is validated !*
 ## TODO
 
-- Add url for bom
-- Add battery level information
 - Add pinout
