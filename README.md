@@ -2,11 +2,11 @@
 
 A small board (48 x 56 mm) for great gloves !
 
-![Top](media/3dTop.png)
+* Still a work in progress, current version does NOT work * 
 
-![Bottom](media/3dBot.png)
-
-![Pcb](media/Pcb.png)
+<img src="media/P1020643.JPG" width="50%" height="50%">
+<img src="media/P1020642.JPG" width="50%" height="50%">
+<img src="media/P1020641.JPG" width="50%" height="50%">
 
 # Features
 
@@ -32,10 +32,14 @@ A small board (48 x 56 mm) for great gloves !
 
 ## Buy the PCB
 
-*Warning still in alpha, design is not yet validated*
+*This design does NOT work right now, do NOT buy it unless you can debug it by yourself*
 You can buy the board via PCBWay using the file ProtoBoard.kicad_pcb.zip and the BOM ProtoBoard.xlsx.
 
-*One click order button once the design is validated !*
 ## TODO
 
 - Add pinout
+
+
+## Sponsors
+
+This project is sponsored by PCBWay, thanks to them for their quality PCB + assembly !
