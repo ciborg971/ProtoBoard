@@ -1,0 +1,7 @@
+(sym_lib_table
+  (lib (name "TYPE-C-31-M-12")(type "Legacy")(uri "${KIPRJMOD}/Lib/TYPE-C-31-M-12/TYPE-C-31-M-12.lib")(options "")(descr ""))
+  (lib (name "Espressif")(type "KiCad")(uri "${KIPRJMOD}/Lib/espressif-kicad-libraries/libraries/Espressif.kicad_sym")(options "")(descr ""))
+  (lib (name "BM05B-SRSS-TB_LF__SN_")(type "KiCad")(uri "${KIPRJMOD}/Lib/BM05B-SRSS-TB_LF__SN_/BM05B-SRSS-TB_LF__SN_.kicad_sym")(options "")(descr ""))
+  (lib (name "BM10B-SRSS-TB_LF__SN_")(type "KiCad")(uri "${KIPRJMOD}/Lib/BM10B-SRSS-TB_LF__SN_/BM10B-SRSS-TB_LF__SN_.kicad_sym")(options "")(descr ""))
+  (lib (name "WS2812-2020")(type "KiCad")(uri "${KIPRJMOD}/Lib/WS2812-2020/WS2812-2020.kicad_sym")(options "")(descr ""))
+)
